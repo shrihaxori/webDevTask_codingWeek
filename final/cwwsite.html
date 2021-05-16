@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>
+        Hog's Head-The Indian Harry Potter Fan Page
+    </title>
+ 
+    <!-- Stylesheet of web page -->
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/harry-potter');
+</style>
+
+    <style>      
+        body {
+            text-align: center;
+            background-color: #10141b;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        header {
+            float: left;
+            top: 3px;
+            width: 1300px;
+            height: 70px;
+        }
+        #ww-nav-logo{
+            float: left;
+            text-align: left;
+            height: 90px;
+            width: 90px;
+            margin: auto;
+        }
+        .site-Title{
+            margin-top: 20px;
+            width: 600px;
+            float: left;
+            color: white;
+            font-size: xx-large;
+            font-family: 'Harry Potter', sans-serif;
+            text-align: left;
+        }
+        .title{
+            margin-left: 20px;
+        }
+        .search-Container{
+            margin-top: 20px;
+            text-align: right;
+            float: left;
+            border-color: aqua;
+            width: 70px;
+            border-radius: 2;
+        }
+        .input-open{
+            float: left;
+            margin-top: 20px;
+            background-color: #10141b;
+            color: white;
+            font-size: larger;
+            width: 380px;
+            border-radius: 2;
+        }
+        .searchIcon{
+            display: inline-block;
+        }
+        .button {
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: -2px 2px;
+            cursor: pointer;
+            opacity: 1;
+        }
+        .button2 {
+            background-color: orangered;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            vertical-align: text-top;
+        }
+        #name {
+            border-radius: 25px;
+            border: 2px solid #73AD21;
+            padding: 20px; 
+            width: 200px;
+            height: 2px;  
+        }
+        .image2 {
+            height: 40px;
+        }
+        .image1 {
+            margin-top: 10px;
+            width: 100%;
+            left: 0%;
+            right: 0%;
+            box-sizing: border-box;
+            border: 10px black;
+        }
+        div.image{
+            display: block;
+            position: static;
+        }
+        .box {
+            float: left;
+            border: 101px;
+            border-color: aqua;
+        }
+        div.Intro {
+            background-color: skyblue;
+            margin-top: 20px;
+            height: 50px;
+            width: 100%;
+        }
+        div.gallery {
+            text-align: center;
+            margin: 10px;
+            border: 1px solid burlywood;
+            background-color: aquamarine;
+            float: left;
+            width: 23%;
+            height:600px;
+        }
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+        div.gallery img {
+            width: 100%;
+            height: 250px;
+            image-resolution: 100%;
+        }
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            font-family: fantasy;
+            height: 100ppx;
+            background-color: green;
+            color: azure;
+        }
+        .middle{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .middleContainer1{
+            float: left;
+            width: 31%;
+            margin-left: 20px;
+            color: antiquewhite;
+            background-color: grey;
+            border-color: #10141b;
+            font-family: fantasy;
+            vertical-align: center;
+        }
+        .middleContainer2{
+            margin-left: 30px;
+            margin-top: 10px;
+            align-items: center;
+            float: left;
+            width: 30%;
+            color: antiquewhite;
+            background-color: grey;
+        }
+        div.desc1 {
+            padding: 15px;
+            text-align: center;
+            height: 100ppx;
+            background-color: azure;
+        }
+        .footer-divider{
+            margin-top: 20px;
+            border: 2px;
+            height: 1px;
+            width: 100%;
+            background-color: white;
+            opacity: 1;
+        }
+        hr{
+            position: relative;
+        }
+        .footer_main{
+            padding: 40px 20px;
+            text-align: center;
+            line-height: 1;
+            font-size: 10px;
+            position: relative;
+            background-color: #10141b;
+            z-index: 3;
+            font-family: Sofia Pro, serif;
+            font-weight: 400;
+        }
+        .Footer_lowerContainer{
+            margin: 0;
+            padding: 0;
+            padding-top: 0;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: flex;
+            -webkit-flex-direction: row;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: normal;
+            flex-direction: row;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            justify-content: space-between;
+            -webkit-align-items: flex-start;
+            -moz-box-align: start;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .Footer_footerText{
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.33;
+            font-family: Sofia Pro, serif;
+            color: white;
+            width: 406px;
+        }
+        form {
+            border: 3px solid #c21a1a;
+            font-family: Arial;
+        }
+        .container {
+             padding: 20px;
+            background-color: #f1f1f1;
+            border: 2px white;
+        }
+        input[type=text], input[type=submit] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: larger;
+            color: black;
+        }
+        input[type=checkbox] {
+            margin-top: 16px;
+        }
+        input[type=submit] {
+            background-color: green;
+            color: white;
+            border: none;
+        }
+        input[type=submit]:hover {
+            opacity: 0.8;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 40px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            color: yellow;
+        }
+        ul{
+            width: 1000px;
+        }
+        .bottom-box{
+            margin-left: 140px;
+            margin-top: 20px;
+            float: left;
+            opacity: 1;
+            color: #f1f1f1;
+            font-size: larger;
+        }
+        .p{
+            width: 120px;
+            float: left;
+            margin-top: 20px;
+            margin-right: 30px;
+            font-family: cursive;
+            height: 24px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+ 
+<body>
+    <header id="ww-nav" class="Navig-ww">
+        <div class="ww-nav-container">
+            <a  href="" class="ww-nav-logo" id="ww-nav-logo">
+                <div class="ww-nav-logo">
+                    <img src="file:///C:/Users/Hari/Downloads/op.c16-in-the-hogs-head-150x150.webp" class="ww-nav-logo" id="ww-nav-logo" />
+                </div>
+            </a>
+            <div class="ww-nav-components" id="ww-nav-components">
+                <div class="buttons">
+                    <div class="site-Title">
+                        <p class="title">The Indian Harry Potter Fanpage</p>
+                        <p style="font-size: medium; margin-left: 20px; margin-top: -10px;">(“Well, it changes every day, you see,” said Harry.)</p>
+                    </div>
+                </div>
+                <button  class="button2" type="button" onclick="" >Books</button>
+                        <button  class="button2" type="button" onclick="" >Characters</button>
+                        <button  class="button2" type="button" onclick="" >Creatures</button>
+                        <button  class="button2" type="button" onclick="" >Places</button>
+                <div class="search-container">
+                    <input class="input-open" type="search" placeholder="Search" id="searchField" autocomplete="off" value="">
+                        
+                    <div class="searchIcon">
+                        <i class="search-Icon"></i>
+                        
+                    </div>
+                    <div class="login-button">
+                        <button  class="button" type="button" onclick="" >Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br><br><br><br>
+    <hr class="footer-divider" style="width: 89.5%;">
+    <div class="image">
+        <div class="image1">
+        <img src="file:///C:/Users/Hari/Downloads/Promo_module_fawkes_launch_left.webp" class="image1"/>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="middleContainer1">
+            <div class="middleText">
+                <p> Expelliarmus</p>
+            </div>
+        </div>
+        <div class="middleContainer1">
+            <div class="middleText2">
+                <p> Crucio</p>
+            </div>
+        </div>
+        <div class="middleContainer1">
+            <div class="middleText2">
+                <p> Avada Kedavra</p>
+            </div>
+        </div>
+        <div class="middleContainer2">
+            <div class="middleText">
+                <p> Wingardium Leviosa</p>
+            </div>
+        </div>
+        <div class="middleContainer2">
+            <div class="middleText2">
+                <p> Welcome to this Site</p>
+            </div>
+        </div>
+        <div class="middleContainer2">
+            <div class="middleText2">
+                <p> Welcome to this Site</p>
+            </div>
+        </div>
+        <div class="middleContainer2">
+            <div class="middleText">
+                <p> Welcome to this Site</p>
+            </div>
+        </div>
+        <div class="middleContainer2">
+            <div class="middleText2">
+                <p> Welcome to this Site</p>
+            </div>
+        </div>
+        <div class="middleContainer2">
+            <div class="middleText2">
+                <p> Welcome to this Site</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr class="footer-divider">
+    <hr class="footer-divider">
+    <div class="box">
+        <div class="Intro" id="intro">
+            Lets Meet these Guys.
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+                <img src="file:///C:/Users/Hari/Downloads/download.jfif" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Harry Potter</div>
+            <div class="desc1">Add a description of the image here</div>
+            <div class="desc1">Add a description of the image here</div>
+            <div class="desc1">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+                <img src="file:///C:/Users/Hari/Downloads/download%20(1).jfif" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Ronald Weasley</div>
+            <div class="desc1">Add a description of the image here</div>
+            <div class="desc1">Add a description of the image here</div>
+            <div class="desc1">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+                <img src="file:///C:/Users/Hari/Downloads/images.jfif" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Hermione Granger</div>
+            <div class="desc1">Add a description of the image here</div>
+            <div class="desc1">Add a description of the image here</div>
+            <div class="desc1">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+                <img src="file:///C:/Users/Hari/Downloads/download%20(2).jfif" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Albus Dumbledore</div>
+            <div class="desc1">Add a description of the image here</div>
+            <div class="desc1">Add a description of the image here</div>
+            <div class="desc1">Add a description of the image here</div>
+        </div>
+        </div>
+    <div class="mid">
+        <div class></div>
+    </div>
+    <br>
+    <br>
+    <hr class="footer-divider">
+    <hr class="footer-divider">
+    <div class="footer_main">
+        <div class="Footer_lowerContainer">
+            <div class="Footer_footerText">
+                <h3>Subscribe to our newsletter</h3>
+                <div class="container" style="background-color:red">
+                    <input type="text" placeholder="Name" name="name" required style="color: black;">
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <label>
+                      <input type="checkbox" checked="checked" name="subscribe" > Daily Newsletter
+                    </label>
+                  </div>
+                <div class="container" style="background-color:blue;">
+                    <input type="submit" value="Subscribe">
+                </div>
+                </form>
+            </div>
+            <ul class="Footer_socialShare">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-reddit"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-quora"></a>
+                <h3 style="color: white;">Connect with us on social media</h3>
+                <div class="bottom-box">
+                    <p class="p">About Us</p>
+                    <p class="p">About Us</p>
+                    <p class="p">About Us</p>
+                    <p class="p">About Us</p>
+                    <p class="p">About Us</p>
+                    <p class="p">About Us</p>
+                    <p class="p">About Us</p>
+                    <p class="p">About Us</p>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+ 
+</html>
